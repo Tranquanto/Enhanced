@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "PEP",
-    "EBE",
-    "PEP"
+    "EPE",
+    "PBP",
+    "EPE"
   ],
   "key": {
-    "P": "minecraft:purpur_block",
+    "P": "minecraft:popped_chorus_fruit",
     "E": "minecraft:ender_eye",
     "B": "minecraft:book"
   },
