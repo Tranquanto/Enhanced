@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "visit_end": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:the_end"
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "enhanced:enchantment/ender_visitor"
+    ]
+  }
+}

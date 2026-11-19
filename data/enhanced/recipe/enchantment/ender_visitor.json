@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PEP",
+    "EBE",
+    "PEP"
+  ],
+  "key": {
+    "P": "minecraft:purpur_block",
+    "E": "minecraft:ender_eye",
+    "B": "minecraft:book"
+  },
+  "result": {
+    "id": "minecraft:enchanted_book",
+    "count": 1,
+    "components": {
+      "minecraft:stored_enchantments": {
+        "enhanced:ender_visitor": 1
+      }
+    }
+  },
+  "show_notification": true
+}

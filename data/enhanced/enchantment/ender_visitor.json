@@ -1,0 +1,18 @@
+{
+  "description": "Ender Visitor",
+  "supported_items": "minecraft:flint_and_steel",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 2147483647,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 26,
+  "slots": [
+    "mainhand"
+  ]
+}
