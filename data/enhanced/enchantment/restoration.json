@@ -1,0 +1,44 @@
+{
+  "exclusive_set": "minecraft:mending",
+  "anvil_cost": 12,
+  "description": "Restoration",
+  "max_cost": {
+    "base": 90,
+    "per_level_above_first": 15
+  },
+  "max_level": 3,
+  "min_cost": {
+    "base": 40,
+    "per_level_above_first": 10
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 1,
+  "effects": {
+    "minecraft:tick": [
+      {
+        "requirements": {
+          "type": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:div",
+            "left": {
+              "type": "minecraft:enchantment_level",
+              "amount": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 1
+              }
+            },
+            "right": 1000
+          }
+        },
+        "effect": {
+          "type": "minecraft:change_item_damage",
+          "amount": -1
+        }
+      }
+    ]
+  }
+}

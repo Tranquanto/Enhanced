@@ -1,0 +1,31 @@
+{
+  "description": "Affluence",
+  "exclusive_set": "minecraft:silk_touch",
+  "supported_items": "#minecraft:tools_and_weapons",
+  "weight": 4,
+  "max_level": 3,
+  "min_cost": {
+    "base": 12,
+    "per_level_above_first": 12
+  },
+  "max_cost": {
+    "base": 36,
+    "per_level_above_first": 12
+  },
+  "anvil_cost": 24,
+  "slots": [],
+  "effects": {
+    "minecraft:block_experience": [
+      {
+        "effect": {
+          "type": "minecraft:multiply",
+          "factor": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          }
+        }
+      }
+    ]
+  }
+}

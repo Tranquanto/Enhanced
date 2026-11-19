@@ -1,0 +1,60 @@
+{
+  "description": "Curse of Instability",
+  "supported_items": "#minecraft:enchantable/weapon",
+  "weight": 1,
+  "max_level": 5,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "requirements": {
+          "type": "minecraft:random_chance",
+          "chance": {
+            "type": "minecraft:enchantment_level",
+            "amount": {
+              "type": "minecraft:linear",
+              "base": 0.01,
+              "per_level_above_first": 0.01
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:explode",
+          "attribute_to_user": false,
+          "damage_type": "enhanced:instability_curse_explosion",
+          "radius": {
+            "type": "minecraft:linear",
+            "base": 2,
+            "per_level_above_first": 0.5
+          },
+          "create_fire": true,
+          "block_interaction": "tnt",
+          "sound": {
+            "sound_id": "entity.generic.explode",
+            "range": 64
+          },
+          "small_particle": {
+            "type": "minecraft:explosion"
+          },
+          "large_particle": {
+            "type": "minecraft:explosion_emitter"
+          },
+          "block_particles": []
+        },
+        "enchanted": "attacker",
+        "affected": "attacker"
+      }
+    ]
+  }
+}

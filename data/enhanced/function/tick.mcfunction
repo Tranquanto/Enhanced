@@ -1,0 +1,1 @@
+execute as @e[type=arrow,predicate=enhanced:arrow_on_ground] at @s if data entity @s weapon.components.minecraft:enchantments.enhanced:volatility run function enhanced:enchantments/volatility
