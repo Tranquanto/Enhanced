@@ -1,0 +1,45 @@
+{
+  "description": "Adventurer's Greed",
+  "exclusive_set": [
+    "minecraft:looting"
+  ],
+  "supported_items": "#minecraft:enchantable/weapon",
+  "primary_items": "#minecraft:enchantable/melee_weapon",
+  "weight": 2,
+  "max_level": 8,
+  "min_cost": {
+    "base": 20,
+    "per_level_above_first": 20
+  },
+  "max_cost": {
+    "base": 35,
+    "per_level_above_first": 20
+  },
+  "anvil_cost": 36,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:equipment_drops": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:fraction",
+            "numerator": {
+              "type": "minecraft:exponent",
+              "base": 1.5,
+              "power": {
+                "type": "minecraft:linear",
+                "base": 1,
+                "per_level_above_first": 1
+              }
+            },
+            "denominator": 25.62890625
+          }
+        },
+        "enchanted": "attacker"
+      }
+    ]
+  }
+}
