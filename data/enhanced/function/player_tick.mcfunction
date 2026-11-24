@@ -1,0 +1,1 @@
+execute if items entity @s armor.head *[minecraft:enchantments~[{enchantments:"enhanced:illumination"}]] at @s positioned ~ ~1 ~ run function enhanced:enchantments/illumination/tick
