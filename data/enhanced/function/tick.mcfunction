@@ -1,2 +1,4 @@
 execute as @e[type=arrow,predicate=enhanced:arrow_on_ground] at @s if data entity @s weapon.components.minecraft:enchantments.enhanced:volatility run function enhanced:enchantments/volatility
 execute as @e[type=marker,tag=enhanced.ender_visitor.temp] at @s run function enhanced:enchantments/ender_visitor/tick
+execute as @e[type=marker,tag=enhanced.illumination.light] at @s run function enhanced:enchantments/illumination/update
+execute as @a if items entity @s armor.head *[minecraft:enchantments~[{enchantments:"enhanced:illumination"}]] at @s positioned ~ ~1 ~ run function enhanced:enchantments/illumination/tick

@@ -1,0 +1,18 @@
+{
+  "description": "Illumination",
+  "supported_items": "#minecraft:enchantable/head_armor",
+  "weight": 2,
+  "max_level": 5,
+  "min_cost": {
+    "base": 5,
+    "per_level_above_first": 5
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 5
+  },
+  "anvil_cost": 7,
+  "slots": [
+    "head"
+  ]
+}
